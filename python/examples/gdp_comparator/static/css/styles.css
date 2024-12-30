@@ -1,0 +1,128 @@
+/* Reset */
+body, h1, p, form, input, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+form label {
+  margin-right: 10px;
+}
+
+form input {
+  margin-right: 20px;
+}
+
+canvas {
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+header {
+  background-color: #0044cc;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+main {
+  padding: 2em;
+  text-align: center;
+}
+
+button {
+  background-color: #0044cc;
+  color: white;
+  padding: 0.5em 1em;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #003399;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+#results {
+  margin-top: 20px;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  th, td {
+    font-size: 0.9em; /* Adjust font size for better fit */
+  }
+}
+
+/* Scrollable table container */
+table-container {
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  max-height: 100px; /* Limit the table's height */
+  max-width: 100%; /* Ensure the container doesn't exceed parent width */
+  border: 1px solid #ccc; /* Add border for better visibility */
+  margin: 10px 0; /* Add spacing around the table */
+}
+
+/* General table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+
+

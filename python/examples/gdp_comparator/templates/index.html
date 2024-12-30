@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Compare Indicator of two countries with TradingEconomics data.">
+  <meta name="keywords" content="Indicator, compare countries, TradingEconomics, economic data">
+  <!-- Social Media Preview -->
+  <meta property="og:title" content="TradingEconomics Indicator Comparator">
+  <meta property="og:description" content="A web app to compare GDP and other indicators between countries.">
+  <!-- Please update the urls in the following before production -->
+  <meta property="og:image" content="https://yourdomain.com/static/images/preview.png">
+  <meta property="og:url" content="https://yourdomain.com">
+
+  <title>TradingEconomics Indicator Comparator</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" nonce="{{ g.style_nonce }}">
+</head>
+<body>
+  <header>
+    <h1>Compare Economic Indicators By Country</h1>
+  </header>
+  <main>
+    <form id="compareForm">
+      <label for="country1">Country 1:</label>
+      <input type="text" id="country1" name="country1" required aria-label="Enter first country">
+      
+      <label for="country2">Country 2:</label>
+      <input type="text" id="country2" name="country2" required aria-label="Enter second country">
+      
+      <label for="indicator">Indicator:</label>
+      <select id="indicator" name="indicator" aria-label="Choose an economic indicator">
+        <option value="GDP" selected>GDP</option>
+        <option value="Inflation Rate MoM">Inflation Rate MoM</option>
+      </select>
+      
+      <button type="submit" aria-label="Compare countries">Compare</button>
+    </form>
+    <div id="results" aria-live="polite"></div>
+  </main>
+  <noscript>
+    <p>This application requires JavaScript to function. Please enable JavaScript in your browser settings.</p>
+  </noscript>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js" nonce="{{ g.script_nonce }}"></script>
+  <script src="{{ url_for('static', filename='js/script.js') }}" nonce="{{ g.script_nonce }}"></script>
+</body>
+</html>

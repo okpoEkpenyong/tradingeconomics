@@ -1,0 +1,66 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.pdb
+*.log
+*.pot
+*.pyc
+
+# Virtual Environment
+venv/
+env/
+te-env/
+.venv/
+.env/
+.te-env/
+
+# Flask instance folder
+instance/
+
+# Flask configuration
+*.cfg
+*.ini
+
+# PyCharm or other IDE settings
+.idea/
+
+# VS Code settings
+.vscode/
+
+# MacOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+
+# Docker
+*.dockerfile
+docker-compose.override.yml
+Dockerfile*
+
+# Logs
+*.log
+
+# Dependency directories
+node_modules/
+bower_components/
+
+# JetBrains IDE files
+.idea/
+
+# Pytest
+.cache
+
+# Coverage
+.coverage
+coverage.xml
+*.coveragerc
+
+# mypy
+.mypy_cache/
+.dmypy.json
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
